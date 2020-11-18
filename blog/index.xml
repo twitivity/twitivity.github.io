@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on Twitivity</title>
+    <link>http://localhost:1313/blog/</link>
+    <description>Recent content in Blogs on Twitivity</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Wed, 18 Nov 2020 17:21:30 +0600</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Account Activity API</title>
+      <link>http://localhost:1313/blog/account-activity-api/</link>
+      <pubDate>Wed, 18 Nov 2020 17:21:30 +0600</pubDate>
+      
+      <guid>http://localhost:1313/blog/account-activity-api/</guid>
+      <description>Cool </description>
+    </item>
+    
+  </channel>
+</rss>

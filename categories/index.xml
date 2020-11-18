@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Twitivity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© {year}</copyright>
+    <copyright>© {year} twitivity.dev</copyright>
     
 	<atom:link href="https://twitivity.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Twitivity</title>
-    <link>https://twitivity.dev/</link>
-    <description>Recent content on Twitivity</description>
+    <title>Docs on Twitivity</title>
+    <link>https://twitivity.dev/docs/</link>
+    <description>Recent content in Docs on Twitivity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year} twitivity.dev</copyright>
     
-	<atom:link href="https://twitivity.dev/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://twitivity.dev/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

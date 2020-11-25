@@ -22,4 +22,8 @@
     <loc>https://twitivity.dev/tags/</loc>
   </url>
   
+  <url>
+    <loc>https://twitivity.dev/docs/twitter-stream.py/</loc>
+  </url>
+  
 </urlset>

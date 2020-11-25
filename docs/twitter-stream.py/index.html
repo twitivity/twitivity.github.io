@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>twitter-stream.py | Twitivity</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="twitter-stream.py" />
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:site" content="https://twitter.com/twitivitydev" />
+  <meta name="twitter:creator" content="https://twitter.com/twitivitydev" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+
+  
+
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.b60e0932fe1c50c3d7c5b4f83ee9e4592363654d0f2abf05bbd0678d5b8a214c.css" integrity="sha256-tg4JMv4cUMPXxbT4PunkWSNjZU0PKr8Fu9BnjVuKIUw="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+
+  
+   
+    
+
+<script type="application/ld+json">
+  
+    { 
+      "@context": "http://schema.org", 
+      "@type": "WebSite", 
+      "url": "https:\/\/twitivity.dev\/docs\/twitter-stream.py\/",
+      "name": "twitter-stream.py",
+      "author": {
+        "@type": "Person",
+        "name": ""
+      },
+      "description": ""
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  class="active"
+         href="/docs">docs</a>
+      </li>
+    
+      <li>
+        <a  href="/">home</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">twitter-stream.py</h1>
+            
+          </header>
+          <article class="post__content">
+              
+<h2 id="class-filteredstreamhttpsgithubcomtwitivitytwitter-streampyblobmastertwitter_streampy"><a href="https://github.com/twitivity/twitter-stream.py/blob/master/twitter_stream.py" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>class FilteredStream</a>
+</h2>
+<ul>
+<li>
+<p><strong>POST</strong>, <strong>DELETE</strong> <code>/2/tweets/search/stream/rules</code></p>
+<pre><code class="language-python">def add_rule(self, data: dict) -&gt; json:
+  return self.api(
+    method=&quot;POST&quot;, endpoint=&quot;stream/rules&quot;, data=data
+  ).json()
+</code></pre>
+<center><script id="asciicast-375138" src="https://asciinema.org/a/375138.js" async></script></center>
+</li>
+<li>
+<p><strong>GET</strong> <code>/2/tweets/search/stream/rules</code></p>
+<pre><code class="language-python">def get_rules(self) -&gt; json:
+  return self.api(
+    method=&quot;GET&quot;, endpoint=&quot;stream/rules&quot;
+  ).json()
+</code></pre>
+<center><script id="asciicast-375142" src="https://asciinema.org/a/375142.js" async></script></center>
+</li>
+<li>
+<p><strong>DELETE</strong></p>
+<pre><code class="language-python">def delete_rule(self, data: dict) -&gt; json:
+  return self.api(
+    method=&quot;POST&quot;, endpoint=&quot;stream/rules&quot;, data=data
+  )
+</code></pre>
+<center><script id="asciicast-375145" src="https://asciinema.org/a/375145.js" async></script></center>
+</li>
+<li>
+<p><strong>GET</strong> <code>GET /2/tweets/search/stream</code></p>
+<pre><code class="language-python">def connect(self):
+  try:
+    response = self.api(
+      &quot;GET&quot;, endpoint=&quot;stream&quot;, stream=True
+    )
+    response.raise_for_status()
+    for response_lines in response.iter_lines():
+        if response_lines:
+            yield json.loads(response_lines)
+  except Exception as e:
+      raise e
+</code></pre>
+<center><script id="asciicast-375147" src="https://asciinema.org/a/375147.js" async></script></center>
+</li>
+</ul>
+<h2 id="installation">Installation<a class="anchor" href="#installation">#</a></h2>
+<pre><code>$ pip install twitter-stream.py
+</code></pre>
+<h2 id="demo">Demo<a class="anchor" href="#demo">#</a></h2>
+
+
+              
+          </article>
+          
+
+ 
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Twitter"
+         href="https://twitter.com/twitivitydev"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://twitivity.dev/svg/twitter.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/twitivity"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://twitivity.dev/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:mail@twitivity.dev"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://twitivity.dev/svg/email.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2020 twitivity.dev</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.49e4d8a384357d9b445b87371863419937ede9fa77737522ffb633073aebfa44.js" integrity="sha256-SeTYo4Q1fZtEW4c3GGNBmTft6fp3c3Ui/7YzBzrr&#43;kQ=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>

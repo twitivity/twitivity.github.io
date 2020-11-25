@@ -2,23 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docs on Twitivity</title>
-    <link>https://twitivity.dev/docs/</link>
+    <link>http://localhost:1313/docs/</link>
     <description>Recent content in Docs on Twitivity</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© {year} twitivity.dev</copyright>
     
-	<atom:link href="https://twitivity.dev/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Account Activity API</title>
-      <link>https://twitivity.dev/docs/account-activity-api/</link>
+      <link>http://localhost:1313/docs/account-activity-api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://twitivity.dev/docs/account-activity-api/</guid>
+      <guid>http://localhost:1313/docs/account-activity-api/</guid>
       <description>Table of Contents
 Part 1: - Introduction - Getting Started &amp;amp; Setting Up the Twitter App. - Usage: - Stream Events in Real Time. - Configuration. - Installation Part 2: - Deploying On Web Server - Code Snippet - Calling API From Local Machine. - How do you view account activity events in real-time?  Introduction The Account Activity API is designed to get an accounts activity events in real time.</description>
+    </item>
+    
+    <item>
+      <title>twitter-stream.py</title>
+      <link>http://localhost:1313/docs/twitter-stream.py/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/twitter-stream.py/</guid>
+      <description>class FilteredStream    POST, DELETE /2/tweets/search/stream/rules
+def add_rule(self, data: dict) -&amp;gt; json: return self.api( method=&amp;quot;POST&amp;quot;, endpoint=&amp;quot;stream/rules&amp;quot;, data=data ).json()     GET /2/tweets/search/stream/rules
+def get_rules(self) -&amp;gt; json: return self.api( method=&amp;quot;GET&amp;quot;, endpoint=&amp;quot;stream/rules&amp;quot; ).json()     DELETE
+def delete_rule(self, data: dict) -&amp;gt; json: return self.api( method=&amp;quot;POST&amp;quot;, endpoint=&amp;quot;stream/rules&amp;quot;, data=data )     GET GET /2/tweets/search/stream
+def connect(self): try: response = self.api( &amp;quot;GET&amp;quot;, endpoint=&amp;quot;stream&amp;quot;, stream=True ) response.raise_for_status() for response_lines in response.</description>
     </item>
     
   </channel>

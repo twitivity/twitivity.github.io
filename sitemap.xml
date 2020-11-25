@@ -3,27 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://twitivity.dev/</loc>
+    <loc>http://localhost:1313/</loc>
   </url>
   
   <url>
-    <loc>https://twitivity.dev/docs/account-activity-api/</loc>
+    <loc>http://localhost:1313/docs/account-activity-api/</loc>
   </url>
   
   <url>
-    <loc>https://twitivity.dev/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
   
   <url>
-    <loc>https://twitivity.dev/docs/</loc>
+    <loc>http://localhost:1313/docs/</loc>
   </url>
   
   <url>
-    <loc>https://twitivity.dev/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
   
   <url>
-    <loc>https://twitivity.dev/docs/twitter-stream.py/</loc>
+    <loc>http://localhost:1313/docs/twitter-stream.py/</loc>
   </url>
   
 </urlset>

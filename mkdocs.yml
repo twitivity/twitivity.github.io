@@ -1,6 +1,13 @@
-site_name: Twitivity Documentations
+site_name: Documentations | Twitivity
 site_dir: docs
 docs_dir: _docs
+site_url: https://repo.twitivity.dev
+repo_url: https://github.com/twitivity/twitivity.github.io
+site_author: Saadman Rafat
+copyright: Twitivity
+nav:
+  - 'twitivity.md'
+  - 'twitter-stream.md'
 theme:
   name: material
   icon:

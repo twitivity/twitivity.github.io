@@ -6,8 +6,9 @@ repo_url: https://github.com/twitivity/twitivity.github.io
 site_author: Saadman Rafat
 copyright: Twitivity
 nav:
-  - 'twitivity.md'
-  - 'twitter-stream.md'
+  - Twitivity: 'index.md'
+  - Deploying on a Server: 'twitivity-deploy.md'
+  - Twitter Stream v2: 'twitter-stream.md'
 theme:
   name: material
   icon:

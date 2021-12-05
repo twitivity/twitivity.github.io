@@ -1,6 +1,4 @@
-# API v2
-
-# Twitter Stream
+# Twitter Stream v2
 
 ## Sampled Stream
 

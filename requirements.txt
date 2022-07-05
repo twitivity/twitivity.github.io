@@ -8,7 +8,7 @@ charset-normalizer==2.0.8
 click==8.0.3
 colorama==0.4.4
 cryptography==36.0.0
-Django==3.2.9
+Django==3.2.14
 docutils==0.18.1
 fire==0.4.0
 ghp-import==2.0.2
